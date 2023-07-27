@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Facebook Clone</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="images/Facebook_f_logo_(2021).svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="login-txt">
+            <h1>facebook</h1>
+           <b> <p>
+                Connect with friends and the world around you on Facebook.
+            </p></b>
+        </div>
+        <div class="login">
+            <input type="email" class="email" placeholder="Email or phone number">
+            <input type="password" class="password" placeholder="Password">
+            <a href="home.html" id="btn-login" class="login-btn" >Login</a>
+           <a href="#" class="forgot">Forgot Password?</a>
+            <a href="#" id="btn-login" class="new">Get email and password</a>
+        </div>
+    </div>
+
+
+
+
+
+
+<script>
+
+
+const newBtn = document.querySelector('.new');
+const email = document.querySelector(".email");
+const password = document.querySelector(".password");
+const loginBtn = document.querySelector(".login-btn");
+
+
+
+function updateThem() {
+    if (email.value === 'hello@gmail.com' && password.value === '123123fa') {
+      loginBtn.style.cursor = 'pointer';
+      loginBtn.style.backgroundColor = "#2374E1";
+      loginBtn.disabled = false;  
+
+      loginBtn.addEventListener("click",()=>{
+      window.location.href = "home.html";
+      })
+
+
+
+    }else {
+      loginBtn.style.cursor = 'no-drop';
+      loginBtn.style.backgroundColor = 'rgba(0,0,0,0.2)'; 
+      loginBtn.disabled = true;
+
+
+      loginBtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+
+      })
+      
+
+
+
+    }
+  }
+
+
+
+
+
+
+
+
+window.onload = updateThem;
+email.addEventListener('input', updateThem);
+password.addEventListener('input', updateThem);
+
+
+
+
+
+
+
+
+
+
+newBtn.addEventListener("click",()=>{
+    alert("Email: hello@gmail.com\npassword:123123fa")
+})
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
