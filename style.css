@@ -384,7 +384,7 @@ nav ul img:hover::before{
 
 .container .main-bar{
     width: 50%;
-    height: 1500px;
+    height: 3500px;
     /* margin-left: 25%; */
     min-width: 500px;
     padding: 80px 10px;
@@ -490,7 +490,7 @@ nav ul img:hover::before{
 
 .modal{
     width:45%;
-    height: 45%;
+    height: 55%;
     position: fixed;
     left: 0; 
     right: 0;
