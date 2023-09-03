@@ -276,7 +276,22 @@ nav ul img:hover::before{
     position: fixed;
     left: 0;
     padding-top: 80px;
+    overflow-y: scroll;   
 }
+
+
+.left-bar::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+.left-bar::-webkit-scrollbar-thumb{
+    background-color: #3E4042;
+    border-radius: 10px;
+    width: 5px;
+}
+
+
+
 .container .left-bar ul{
     display: flex;
     align-items: center;
